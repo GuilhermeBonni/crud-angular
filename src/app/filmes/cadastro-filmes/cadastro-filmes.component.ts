@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Alerta } from './../../shared/models/alerta';
 import { AlertaComponent } from './../../shared/components/alerta/alerta.component';
 import { FilmesService } from './../../core/filmes.service';
@@ -20,7 +21,8 @@ export class CadastroFilmesComponent implements OnInit {
   constructor(public validacao: ValidarCamposService,
               public dialog: MatDialog,
               private fb: FormBuilder,
-              private filmeService: FilmesService) { }
+              private filmeService: FilmesService,
+              private router: Router) { }
 
   get f() {
     return this.cadastro.controls;
@@ -65,9 +67,24 @@ export class CadastroFilmesComponent implements OnInit {
         } as Alerta
       };
       const dialogRef = this.dialog.open(AlertaComponent, config);
+      dialogRef.afterClosed().subscribe((opcao: boolean) => {
+        if (opcao) {
+          this.router.navigateByUrl('filmes');
+        } else {
+          this.reiniciarForm();
+        }
+      });
     },
     () => {
-      alert('ERRO AO SALVAR');
+      const config = {
+        data: {
+          titulo: 'Erro ao salvar o serviço',
+          descricao: 'Não conseguimos salvar seu registro, favor tentar novamente mais tarde',
+          corBtnSucesso: 'warn',
+          btnSucesso: 'Fechar'
+        } as Alerta
+      };
+      this.dialog.open(AlertaComponent, config);
   });
   }
 

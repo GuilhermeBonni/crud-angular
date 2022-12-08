@@ -199,6 +199,66 @@
       "urlIMDB": "",
       "genero": "Terror",
       "id": 20
+    },
+    {
+      "titulo": "fdsfsdf",
+      "urlFoto": "",
+      "dtLancamento": "2022-12-12T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Aventura",
+      "id": 21
+    },
+    {
+      "titulo": "dsfdsf",
+      "urlFoto": "",
+      "dtLancamento": "2022-12-19T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Aventura",
+      "id": 22
+    },
+    {
+      "titulo": "dfsdf",
+      "urlFoto": "",
+      "dtLancamento": "2022-12-04T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Terror",
+      "id": 23
+    },
+    {
+      "titulo": "sadasdasd",
+      "urlFoto": "",
+      "dtLancamento": "2022-12-11T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Romance",
+      "id": 24
+    },
+    {
+      "titulo": "sadasdasd",
+      "urlFoto": "",
+      "dtLancamento": "2022-12-11T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Romance",
+      "id": 25
+    },
+    {
+      "titulo": "sdafsadfsd",
+      "urlFoto": "",
+      "dtLancamento": "2022-12-01T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Romance",
+      "id": 26
     }
   ]
 }
